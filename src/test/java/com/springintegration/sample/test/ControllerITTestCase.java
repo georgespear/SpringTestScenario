@@ -45,7 +45,7 @@ public class ControllerITTestCase {
 
 	@Test
 	public void switchTest() throws Exception {
-		mockMvc.perform(post("/")).andDo(MockMvcResultHandlers.print()).andExpect(status().isOk());
+		mockMvc.perform(post("/home")).andDo(MockMvcResultHandlers.print()).andExpect(status().isOk());
 
 	}
 

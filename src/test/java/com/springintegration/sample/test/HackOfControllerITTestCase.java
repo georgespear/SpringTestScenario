@@ -48,7 +48,7 @@ public class HackOfControllerITTestCase {
 
 	@Test
 	public void switchTest() throws Exception {
-		mockMvc.perform(post("/").with(new RequestPostProcessor() {
+		mockMvc.perform(post("/home").with(new RequestPostProcessor() {
 
 			@Override
 			public MockHttpServletRequest postProcessRequest(MockHttpServletRequest _request) {
